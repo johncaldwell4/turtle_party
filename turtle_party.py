@@ -4,14 +4,18 @@ import turtle
 
 side = 100
 color = 'blue'
+number_of_sides = 3
+angle_for_side = 120
 
-def shape ():
+
+def shape(side = 50, color = 'black', number_of_sides = 3, angle_for_side = 120):
     turtle.color(color)
-    for line in range(3):
+    for line in range(number_of_sides):
         turtle.forward(side)
-        turtle.right(120)
+        turtle.right(angle_for_side)
 
-#function to draw the triangle
-shape()
+
+# function to draw the triangle
+shape(400, 'green', 3)
 
 turtle.mainloop()
