@@ -1,13 +1,10 @@
 import turtle
 
-# This creates a triangle upside down and change the color of the triangle
+# created the triangle with a for loop and the triangle is still upside down.
 
 turtle.color('red')
-turtle.forward(100)
-turtle.right(120)
-turtle.forward(100)
-turtle.right(120)
-turtle.forward(100)
-turtle.right(120)
+for line in range(3):
+    turtle.forward(100)
+    turtle.right(120)
 
 turtle.mainloop()
