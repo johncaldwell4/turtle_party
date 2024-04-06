@@ -8,14 +8,20 @@ number_of_sides = 3
 angle_for_side = 120
 
 
-def shape(side = 50, color = 'black', number_of_sides = 3, angle_for_side = 120):
+def shape(side=50, color='black', number_of_sides=3, angle_for_side=360):
     turtle.color(color)
     for line in range(number_of_sides):
         turtle.forward(side)
-        turtle.right(angle_for_side)
+        turtle.right(angle_for_side / number_of_sides)
+
+
+def move():
+    turtle.penup()
+    turtle.back()
+    turtle.pendown()
 
 
 # function to draw the triangle
-shape(400, 'green', 3)
+shape(100, 'green', 3)
 
 turtle.mainloop()
